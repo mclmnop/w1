@@ -19,8 +19,8 @@ const eqArrays = function(array1, array2) {
       compareArr = false;
     }
   }
-  return compareArr; 
-}
+  return compareArr;
+};
 
 
 //TEST CODE
