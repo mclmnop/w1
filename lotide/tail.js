@@ -25,3 +25,4 @@ console.log(tail(["Only one"]));
 const originalArray = ["one", "two", "three"];
 tail(originalArray);
 assertEqual(originalArray.length, 3);
+//from mac
