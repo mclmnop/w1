@@ -14,6 +14,9 @@ const assertEqual = function(actual, expected) {
 
 const eqArrays = function(array1, array2) {
   let compareArr = true;
+  if (array1.length !== array2.length) {
+    return false;
+  }
   for (let arrIndex = 0; arrIndex < array1.length; arrIndex ++) {
     if (array1[arrIndex] !== array2[arrIndex]) {
       compareArr = false;
