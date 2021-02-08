@@ -23,3 +23,5 @@ const result1 = countLetters("LIGHOUSE labs");
 assertEqual(result1["L"], 3);
 assertEqual(result1["X"], undefined);
 console.log(countLetters("supercalifragiliscapialidocious"));
+
+module.exports = countLetters;

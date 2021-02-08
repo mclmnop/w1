@@ -41,3 +41,5 @@ console.log(results2);
 const data3 = ["will", "be", "well", "for", "xmas"];
 const results3 = takeUntil(data3, x => x === 'well');
 assertArraysEqual(results3, ["will", "be", "well"]);
+
+module.exports = takeUntil;

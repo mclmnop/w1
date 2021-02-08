@@ -40,3 +40,4 @@ const result1 = letterPositions("hello");
 assertArraysEqual(result1["l"], [2, 3]);
 console.log(letterPositions("goodbye"));
 
+module.exports = letterPositions;
