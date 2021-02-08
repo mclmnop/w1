@@ -2,7 +2,7 @@
 takes 2 arrays as input
 runs eqArrays which compares the length and the content of the 2 arrays
 returns a message with pass if length is equal, failed if not
-*/ 
+*/
 
 const eqArrays = require('./eqArrays');
 
