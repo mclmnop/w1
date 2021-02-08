@@ -16,23 +16,24 @@ const eqArrays = function(array1, array2) {
   return compareArr;
 };
 
-const flatten = function (array) {
+const flatten = function(array) {
   //let newArray = array.flat();
   let newArray = [];
   for (let elem = 0; elem < array.length; elem++) {
     //console.log("inside first loop" + newArray);
     if (Array.isArray(array[elem])) {
       let nestedArray = JSON.stringify(array[elem]).replace(/\[/, '').replace(/\]/, '');
-      console.log(`nested with replace ${nestedArray}`)
+      //console.log(`nested with replace ${nestedArray}`)
       
       newArray.push(nestedArray);
       //console.log( "adding nested array content" + newArray);
     } else {
-      newArray.push(array[elem])
+      newArray.push(array[elem]);
     }
   }
-  console.log(newArray.join(', '));
-}
+  return (newArray.join(', '));
+};
 
 console.log(flatten([1, 2, [3, 4], 5, [6]]));
-flatten([1, 2, ["chien", "chat"], 5, [6]]) // => [1, 2, 3, 4, 5, 6]
+flatten([1, 2, ["chien", "chat"], 5, [6]]); // => [1, 2, 3, 4, 5, 6]
+flatten([1, 2, [3, 4], 5, [6]]);
